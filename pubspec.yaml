@@ -64,6 +64,7 @@ flutter:
     - assets/images/splashScreen.jpeg
     - assets/images/splashBack.png
     - assets/images/background.png
+    - assets/images/secondscreen.jpeg
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

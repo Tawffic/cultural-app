@@ -34,7 +34,7 @@ class SplashScreen extends StatelessWidget {
               color: Colors.white
             ),),
           ),
-          SizedBox(height: 70,),
+          SizedBox(height: 150,),
           Container(
             
             alignment: Alignment.bottomCenter,
@@ -45,6 +45,7 @@ class SplashScreen extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.white,
                 padding: EdgeInsets.symmetric(horizontal: 30),
+                minimumSize: Size(300, 50)
                 
               ),
               child: Text("Get Started",

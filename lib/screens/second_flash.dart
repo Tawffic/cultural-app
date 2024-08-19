@@ -21,19 +21,26 @@ class SecondSplash extends StatelessWidget {
           children: [
             Container(
               alignment: Alignment.center,
-              child: Image.asset(""),
+              margin: EdgeInsets.only(top: 70),
+              child: CircleAvatar(
+                backgroundImage: AssetImage("assets/images/secondscreen.jpeg"),
+                radius: 150,
+              )
             ),
-            SizedBox(height: 50,),
+            SizedBox(height:250,),
             Container(
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.pink
+                  backgroundColor: Colors.pink,
+                  minimumSize: Size(300,50)
                 ),
-                onPressed: (){},
-                child: Text("Login",
+                onPressed: (){
+                  Navigator.pushNamed(context, '/third_splash');
+                },
+                child: Text("Log in",
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 18,
+                  fontSize: 25,
                   fontWeight: FontWeight.bold
                 ),),
               ),
@@ -42,13 +49,16 @@ class SecondSplash extends StatelessWidget {
              Container(
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color.fromARGB(255, 17, 1, 44)
+                  backgroundColor:  const Color.fromARGB(255, 17, 1, 44),
+                  minimumSize: Size(300, 50)
                 ),
-                onPressed: (){},
-                child: Text("Sign UP",
+                onPressed: (){
+                  Navigator.pushNamed(context, '/sign_up');
+                },
+                child: Text("SIGN UP",
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 18,
+                  fontSize: 25,
                   fontWeight: FontWeight.bold
                 ),),
               ),
