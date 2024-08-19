@@ -175,7 +175,7 @@ class SignupScreen extends StatelessWidget {
                 onPressed: (){
                   Navigator.pushNamed(context, '');
                 },
-                child: Text("Log in",
+                child: Text("Sign Up",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 25,
